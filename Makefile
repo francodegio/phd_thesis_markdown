@@ -48,11 +48,14 @@ pdf:
 		--variable=fontsize:12pt \
 		--variable=papersize:a4paper \
 		--variable=documentclass:report \
+		--variable=lang:es-ES \
+		--variable=mainlang:spanish \
 		--pdf-engine=xelatex \
 		"$(INPUTDIR)"/*.md \
 		"$(INPUTDIR)/metadata.yml" \
 		--filter=pandoc-shortcaption \
-		--filter=pandoc-xnos \
+		--filter=pandoc-fignos \
+		--filter=pandoc-secnos \
 		--bibliography="$(BIBFILE)" \
 		--citeproc \
 		--csl="$(STYLEDIR)/ref_format.csl" \
@@ -76,6 +79,8 @@ tex:
 		--bibliography="$(BIBFILE)" \
 		--citeproc \
 		--csl="$(STYLEDIR)/ref_format.csl" \
+		--variable=lang:es-ES \
+		--variable=mainlang:spanish \
 		--number-sections \
 		--verbose \
 		2>pandoc.tex.log
@@ -93,6 +98,8 @@ html:
 		--bibliography="$(BIBFILE)" \
 		--citeproc \
 		--csl="$(STYLEDIR)/ref_format.csl" \
+		--variable=lang:es-ES \
+		--variable=mainlang:spanish \
 		--number-sections \
 		--verbose \
 		2>pandoc.html.log
@@ -111,6 +118,8 @@ docx:
 		--bibliography="$(BIBFILE)" \
 		--citeproc \
 		--csl="$(STYLEDIR)/ref_format.csl" \
+		--variable=lang:es-ES \
+		--variable=mainlang:spanish \
 		--number-sections \
 		--verbose \
 		2>pandoc.docx.log
