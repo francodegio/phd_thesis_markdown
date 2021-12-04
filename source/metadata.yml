@@ -1,12 +1,11 @@
 ---
 pagetitle: This is the HTML document title
-title: This is the title of the thesis
-subtitle: This is the subtitle of the thesis
-author: Firstname Surname
-date: January 2015
-location: University College London, UK
+title: Aplicaciones de Aprendizaje Estadístico Avanzado en Economía
+#subtitle: This is the subtitle of the thesis
+author: Franco De Giovannini
+date: Noviembre de 2021
+location: Universidad Católica de Cuyo
 supervisor:
-- Professor Louis Fage
-- Captain J. Y. Cousteau
-degree: Doctor of Philosophy
+- Lic. Juan Marcos Pastor
+degree: Licenciatura en Economía
 ---
